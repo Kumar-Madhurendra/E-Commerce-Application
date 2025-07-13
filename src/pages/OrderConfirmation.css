@@ -1,0 +1,346 @@
+.order-confirmation-page {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-color: var(--bg-secondary);
+}
+
+.confirmation-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  background-color: var(--bg-primary);
+  padding: 3rem 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: var(--success-color);
+  margin-bottom: 1.5rem;
+}
+
+.success-message h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.order-number {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: 1.125rem;
+  color: var(--text-primary);
+}
+
+.order-number strong {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+/* Order Details */
+.order-details {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.order-details h2 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.detail-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.detail-content h3 {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-content p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Next Steps */
+.next-steps {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.next-steps h2 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.step-item {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.step-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.step-content h3 {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.step-content p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Support Information */
+.support-info {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.support-info h2 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.support-info > p {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.support-option {
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.support-option h3 {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.support-option p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.support-option p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.support-option .btn {
+  width: 100%;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-buttons .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 200px;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-confirmation-page {
+    padding: 1rem 0;
+  }
+
+  .success-message {
+    padding: 2rem 1rem;
+  }
+
+  .success-message h1 {
+    font-size: 2rem;
+  }
+
+  .success-icon {
+    font-size: 3rem;
+  }
+
+  .order-details,
+  .next-steps,
+  .support-info {
+    padding: 1.5rem;
+  }
+
+  .order-details h2,
+  .next-steps h2,
+  .support-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .support-options {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .success-message h1 {
+    font-size: 1.75rem;
+  }
+
+  .success-icon {
+    font-size: 2.5rem;
+  }
+
+  .order-number {
+    font-size: 1rem;
+  }
+
+  .order-number strong {
+    font-size: 1.125rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-item {
+    padding: 1rem;
+  }
+
+  .step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .detail-item {
+    padding: 1rem;
+  }
+
+  .support-option {
+    padding: 1rem;
+  }
+} 
